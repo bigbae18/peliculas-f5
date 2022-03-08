@@ -11,9 +11,15 @@
 body {
     position:relative;
 }
+.roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+.roboto-slab {
+    font-family: 'Roboto Slab', serif;
+}
 
 .wrapper {
-    height: 100vh;
+    height: 40vh;
     color: var(--text-color);
     background-repeat:no-repeat;
     background-color: #22333B;
@@ -35,4 +41,12 @@ body {
     background-size: cover;
     background-position:center;
     height: 50vh;
+}
+.edit-button {
+    background-color:#616EE8;
+    color: var(--text-color);
+}
+.delete-button {
+    background-color: #E84343;
+    color: var(--text-color);
 }

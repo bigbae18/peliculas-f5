@@ -4,14 +4,14 @@
             "id": 1,
             "nombre": "Encanto",
             "director": "Byrono Howard y Jared Bush",
-            "clasificacion": "Animación",
+            "clasificacion": "Animation",
             "imgUrl": "https://m.media-amazon.com/images/I/91634knEAzL._AC_UL320_.jpg"
         },
         {
             "id": 2,
             "nombre": "Pulp Fiction",
             "director": "Tarantino",
-            "clasificacion": "Acción",
+            "clasificacion": "Action",
             "imgUrl": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
         },
         {
@@ -25,7 +25,7 @@
             "id": 4,
             "nombre": "300",
             "director": "Zack Snyder",
-            "clasificacion": "Acción",
+            "clasificacion": "Action",
             "imgUrl": "https://m.media-amazon.com/images/I/617ugvR0tOL._AC_SY741_.jpg"
         },
         {
@@ -39,7 +39,7 @@
             "id": 6,
             "nombre": "Forrest Gump",
             "director": "Robert Zemeckis",
-            "clasificacion": "Comedia",
+            "clasificacion": "Comedy",
             "imgUrl": "https://m.media-amazon.com/images/I/41BICQtlYhL._AC_.jpg"
         },
         {

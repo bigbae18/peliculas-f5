@@ -1,5 +1,5 @@
 const requestUrl = "http://localhost:3000/peliculas";
-const movieSection = document.getElementById('movieSection')
+const movieSection = document.getElementById('movieSection');
 
 
 const getMovies = async () => {
@@ -11,8 +11,12 @@ const getMovies = async () => {
 const deleteMovie = async (id) => {
 
 }
+const editMovie = (id) => {
+    window.location = "./movie.html?id=" + id;
+}
 
-getMovies()
+document.addEventListener('DOMContentLoaded', () => {
+    getMovies()
         .then(movies => {
             console.log(movies);
             
@@ -26,15 +30,19 @@ getMovies()
 
 
                 movieSection.innerHTML += `
-                <section id="${id}" class="card col-12 col-md-4 col-xl-3 card-movie">
+                <section class="card col-12 col-md-4 col-xl-3 card-movie">
                     <div class="card-header text-center py-2">
-                        <h4 class="card-title">${title}</h4>
+                        <h4 class="card-title roboto-mono">${title}</h4>
                     </div>
                     <div class="card-body" style="background-image:url(${img})">
                     </div>
                     <div class="card-footer text-muted">
-                        <h5 class="card-subtitle mt-4 mb-2">${clasification}</h5>
+                        <h5 class="card-subtitle mt-4 mb-2 roboto-mono">${clasification}</h5>
                         <h6 class="card-subtitle mb-4">${director}</h6>
+                    </div>
+                    <div class="d-flex py-2 justify-content-end gap-2">
+                        <button onclick="editMovie(${id})" type="button" class="btn edit-button">Edit</button>
+                        <button onclick="deleteMovie(${id})" type="button" class="btn delete-button">Delete</button>
                     </div>
                 </section>
                 `
@@ -42,3 +50,5 @@ getMovies()
         }).catch(error => {
             console.error(error);
         })
+})
+
