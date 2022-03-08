@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --card-bg-color: #0A0908;
+    --text-color: #F2F4F3;
+}
+
+body {
+    position:relative;
+}
+
+.wrapper {
+    height: 100vh;
+    color: var(--text-color);
+    background-repeat:no-repeat;
+    background-color: #22333B;
+    background-size:cover;
+    background-position:center;
+}
+
+.card-movie {
+    border-radius: 15px;
+    color: var(--text-color);
+    background-color: var(--card-bg-color);
+}
+
+.image-movie {
+    height: fit-content;
+}
+
+.card-body {
+    background-size: cover;
+    background-position:center;
+    height: 50vh;
+}
