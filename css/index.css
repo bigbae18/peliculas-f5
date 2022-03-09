@@ -11,6 +11,22 @@
 body {
     position:relative;
 }
+header {
+    background-color: #22333B;
+    position: sticky;
+    top:0;
+    height: 10vh;
+    z-index: 1;
+}
+a {
+    text-decoration: none;
+}
+.link {
+    cursor: pointer;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
 .roboto-mono {
     font-family: 'Roboto Mono', monospace;
 }
@@ -49,4 +65,7 @@ body {
 .delete-button {
     background-color: #E84343;
     color: var(--text-color);
+}
+form {
+    width: 50%;
 }

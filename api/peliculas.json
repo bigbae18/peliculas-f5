@@ -1,81 +1,81 @@
 {
-    "peliculas": [
-        {
-            "id": 1,
-            "nombre": "Encanto",
-            "director": "Byrono Howard y Jared Bush",
-            "clasificacion": "Animation",
-            "imgUrl": "https://m.media-amazon.com/images/I/91634knEAzL._AC_UL320_.jpg"
-        },
-        {
-            "id": 2,
-            "nombre": "Pulp Fiction",
-            "director": "Tarantino",
-            "clasificacion": "Action",
-            "imgUrl": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
-        },
-        {
-            "id": 3,
-            "nombre": "Billy Elliot",
-            "director": "Stephen Daldry",
-            "clasificacion": "Musical",
-            "imgUrl": "https://m.media-amazon.com/images/I/41IiA5LyZOL.jpg"
-        },
-        {
-            "id": 4,
-            "nombre": "300",
-            "director": "Zack Snyder",
-            "clasificacion": "Action",
-            "imgUrl": "https://m.media-amazon.com/images/I/617ugvR0tOL._AC_SY741_.jpg"
-        },
-        {
-            "id": 5,
-            "nombre": "El silencio de los corderos",
-            "director": "Jonathan Demme",
-            "clasificacion": "Drama",
-            "imgUrl": "https://m.media-amazon.com/images/I/71n2ua4cFGL._AC_SY606_.jpg"
-        },
-        {
-            "id": 6,
-            "nombre": "Forrest Gump",
-            "director": "Robert Zemeckis",
-            "clasificacion": "Comedy",
-            "imgUrl": "https://m.media-amazon.com/images/I/41BICQtlYhL._AC_.jpg"
-        },
-        {
-            "id": 7,
-            "nombre": "Las Hurdes",
-            "director": "Luis Buñuel",
-            "clasificacion": "Documental",
-            "imgUrl": "https://m.media-amazon.com/images/I/81gjIXSyZyL._SY445_.jpg"
-        },
-        {
-            "id": 8,
-            "nombre": "Déjame Entrar",
-            "director": "Matt Reeves",
-            "clasificacion": "Horror/Romance",
-            "imgUrl": "https://www.ecartelera.com/carteles/2600/2695/001_m.jpg"
-        },
-        {
-            "nombre": "El sexto sentido",
-            "director": "M. Night Shyamalan",
-            "clasificacion": "Drama",
-            "id": 9,
-            "imgUrl": "https://m.media-amazon.com/images/I/41JZwO-jv9L._AC_.jpg"
-        },
-        {
-            "nombre": "Saw III",
-            "director": "Darren Lynn Bousman",
-            "clasificacion": "Drama",
-            "id": 10,
-            "imgUrl": "https://m.media-amazon.com/images/I/61qbN-RLv+L._AC_SY741_.jpg"
-        },
-        {
-            "nombre": "El protegido",
-            "director": "M. Night Shyamalan",
-            "clasificacion": "Drama",
-            "id": 11,
-            "imgUrl": "https://m.media-amazon.com/images/I/71ah9DKC3oL._SL1265_.jpg"
-        }
-    ]
+  "peliculas": [
+    {
+      "id": 1,
+      "title": "Encanto",
+      "director": "Byrono Howard y Jared Bush",
+      "genre": "Animation",
+      "imgUrl": "https://m.media-amazon.com/images/I/91634knEAzL._AC_UL320_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Pulp Fiction",
+      "director": "Tarantino",
+      "genre": "Action",
+      "imgUrl": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Billy Elliot",
+      "director": "Stephen Daldry",
+      "genre": "Musical",
+      "imgUrl": "https://m.media-amazon.com/images/I/41IiA5LyZOL.jpg"
+    },
+    {
+      "id": 4,
+      "title": "300",
+      "director": "Zack Snyder",
+      "genre": "Action",
+      "imgUrl": "https://m.media-amazon.com/images/I/617ugvR0tOL._AC_SY741_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "El silencio de los corderos",
+      "director": "Jonathan Demme",
+      "genre": "Drama",
+      "imgUrl": "https://m.media-amazon.com/images/I/71n2ua4cFGL._AC_SY606_.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "genre": "Comedy",
+      "imgUrl": "https://m.media-amazon.com/images/I/41BICQtlYhL._AC_.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Las Hurdes",
+      "director": "Luis Buñuel",
+      "genre": "Documental",
+      "imgUrl": "https://m.media-amazon.com/images/I/81gjIXSyZyL._SY445_.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Déjame Entrar",
+      "director": "Matt Reeves",
+      "genre": "Horror/Romance",
+      "imgUrl": "https://www.ecartelera.com/carteles/2600/2695/001_m.jpg"
+    },
+    {
+      "title": "El sexto sentido",
+      "director": "M. Night Shyamalan",
+      "genre": "Drama",
+      "id": 9,
+      "imgUrl": "https://m.media-amazon.com/images/I/41JZwO-jv9L._AC_.jpg"
+    },
+    {
+      "title": "Saw III",
+      "director": "Darren Lynn Bousman",
+      "genre": "Drama",
+      "id": 10,
+      "imgUrl": "https://m.media-amazon.com/images/I/61qbN-RLv+L._AC_SY741_.jpg"
+    },
+    {
+      "title": "El protegido",
+      "director": "M. Night Shyamalan",
+      "genre": "Drama",
+      "id": 11,
+      "imgUrl": "https://m.media-amazon.com/images/I/71ah9DKC3oL._SL1265_.jpg"
+    }
+  ]
 }

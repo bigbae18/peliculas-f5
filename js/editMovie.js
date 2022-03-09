@@ -13,13 +13,16 @@ const fetchMovie = async () => {
 const editMovie = async (data) => {
     // fetch(url, {method: 'PUT', body: JSON.stringify(data)})
 }
+const handleChange = (e) => {
+
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     fetchMovie().then(movie => {
 
-        let title = movie.nombre;
+        let title = movie.title;
         let director = movie.director;
-        let clasification = movie.clasificacion;
+        let clasification = movie.genre;
         let img = movie.imgUrl ?? '';
 
         const cardTemplate = `
@@ -39,15 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
             <form>
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="text" class="form-control" id="title" value="${title}" required>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="mb-3">
+                    <label for="director" class="form-label">Director</label>
+                    <input type="text" class="form-control" id="director" value="${director}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="genre" class="form-label">Genre</label>
+                    <input type="text" class="form-control" id="genre" value="${clasification}" required>
+                </div>
+                <div class="mb-3">
+                    <label for="imgUrl" class="form-label">Image Url</label>
+                    <input type="url" pattern="https://.*, http://.*" class="form-control" value="${img}" id="imgUrl" required>
+                </div>
+                <div class="mb-4 d-flex justify-content-evenly">
+                    <button type="submit" class="btn edit-button">Submit</button>
+                    <a href="index.html" class="btn delete-button">Go Home</a>
                 </div>
             </form>
         `
-
+        movieSection.innerHTML += formTemplate;
         movieSection.innerHTML += cardTemplate;
 
     });
