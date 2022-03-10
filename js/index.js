@@ -24,6 +24,7 @@ const editMovie = (id) => {
     window.location = "./edit-movie.html?id=" + id;
 }
 
+
 document.addEventListener('DOMContentLoaded', () => {
     getMovies()
         .then(movies => {
@@ -48,8 +49,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         <h6 class="card-subtitle mb-4 roboto-slab">Director: <span class="bold">${director}</span></h6>
                     </div>
                     <div class="d-flex py-2 justify-content-end gap-2">
-                        <button id="edit" onclick="editMovie(${id})" type="button" class="btn edit-button">Edit</button>
-                        <button id="delete" onclick="deleteMovie(${id})" type="button" class="btn delete-button" >Delete</button>
+                        <button onclick="editMovie(${id})" type="button" class="btn edit-button">Edit</button>
+                        <button onclick="deleteMovie(${id})" type="button" class="btn delete-button" >Delete</button>
                     </div>
                 </section>
                 `
