@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Encanto",
-      "director": "Byrono Howard y Jared Bush",
+      "director": "Byrono Howard",
       "genre": "Animation",
       "imgUrl": "https://m.media-amazon.com/images/I/91634knEAzL._AC_UL320_.jpg"
     },
@@ -13,13 +13,6 @@
       "director": "Tarantino",
       "genre": "Action",
       "imgUrl": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
-    },
-    {
-      "id": 3,
-      "title": "Billy Elliot",
-      "director": "Stephen Daldry",
-      "genre": "Musical",
-      "imgUrl": "https://m.media-amazon.com/images/I/41IiA5LyZOL.jpg"
     },
     {
       "id": 4,

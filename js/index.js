@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 movieSection.innerHTML += `
-                <section class="card col-12 col-md-4 col-lg-3 card-movie">
+                <section class="card col-12 col-sm-6 col-md-4 col-lg-3 card-movie">
                     <div class="card-header text-center py-2">
                         <h4 class="card-title roboto-mono">${title}</h4>
                     </div>
