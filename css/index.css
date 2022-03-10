@@ -7,7 +7,6 @@
     --card-bg-color: #0A0908;
     --text-color: #F2F4F3;
 }
-
 body {
     position:relative;
 }
@@ -26,14 +25,12 @@ a {
     color: var(--text-color);
     font-size: 1.5rem;
 }
-
 .roboto-mono {
     font-family: 'Roboto Mono', monospace;
 }
 .roboto-slab {
     font-family: 'Roboto Slab', serif;
 }
-
 .wrapper {
     height: 40vh;
     color: var(--text-color);
@@ -42,17 +39,14 @@ a {
     background-size:cover;
     background-position:center;
 }
-
 .card-movie {
     border-radius: 15px;
     color: var(--text-color);
     background-color: var(--card-bg-color);
 }
-
 .image-movie {
     height: fit-content;
 }
-
 .card-body {
     background-size: cover;
     background-position:center;

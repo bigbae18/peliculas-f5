@@ -5,25 +5,72 @@ const id = urlParams.get('id');
 const requestUrl = "http://localhost:3000/peliculas/" + id;
 const movieSection = document.getElementById('movieSection');
 
-const fetchMovie = async () => {
+const getMovies = async () => {
     const response = await fetch(requestUrl);
-    const movie = await response.json();
-    return movie
+    const movies = await response.json();
+    return movies;
 }
-const editMovie = async (data) => {
-    // fetch(url, {method: 'PUT', body: JSON.stringify(data)})
-}
-const handleChange = (e) => {
 
+const handleSubmitData = async (e) => {
+
+    e.preventDefault()
+
+    const result = {
+        id: id
+    };
+
+    const elements = e.target.elements;
+
+    for(let i = 0; i < elements.length-1; i++) {
+        if (elements[i] == "") {
+            throw Error('Input ' + elements[i].name + ' is empty!')
+        }
+        const item = elements[i];
+        result[item.name] = item.value;
+    }
+
+    return result;
 }
+
+const editMovie = async (e) => {
+    const handledData = await handleSubmitData(e);
+    console.log(handledData);
+    let confirmation = false;
+
+    await fetch(requestUrl, {
+        method: "PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(handledData)
+    }).then(result => {
+        console.log(result);
+        confirmation = true;
+    }).catch(error => {
+        console.error(error);
+        alert('Something went wrong!');
+    })
+
+    return confirmation;
+}
+
+document.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const confirmation = editMovie(e);
+    if (!confirmation) {
+        return;
+    }
+
+    window.location.href = "./index.html";
+})
 
 document.addEventListener('DOMContentLoaded', () => {
-    fetchMovie().then(movie => {
+    getMovies().then(movie => {
 
         let title = movie.title;
         let director = movie.director;
         let clasification = movie.genre;
-        let img = movie.imgUrl ?? '';
+        let img = movie.imgUrl;
 
         const cardTemplate = `
             <section class="card col-12 col-md-4 col-xl-3 card-movie">
@@ -42,19 +89,19 @@ document.addEventListener('DOMContentLoaded', () => {
             <form>
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
-                    <input type="text" class="form-control" id="title" value="${title}" required>
+                    <input name="title" type="text" class="form-control" id="title" value="${title}" required>
                 </div>
                 <div class="mb-3">
                     <label for="director" class="form-label">Director</label>
-                    <input type="text" class="form-control" id="director" value="${director}" required>
+                    <input name="director" type="text" class="form-control" id="director" value="${director}" required>
                 </div>
                 <div class="mb-3">
                     <label for="genre" class="form-label">Genre</label>
-                    <input type="text" class="form-control" id="genre" value="${clasification}" required>
+                    <input name="genre" type="text" class="form-control" id="genre" value="${clasification}" required>
                 </div>
                 <div class="mb-3">
                     <label for="imgUrl" class="form-label">Image Url</label>
-                    <input type="url" pattern="https://.*, http://.*" class="form-control" value="${img}" id="imgUrl" required>
+                    <input name="imgUrl" type="url" class="form-control" value="${img}" id="imgUrl" required>
                 </div>
                 <div class="mb-4 d-flex justify-content-evenly">
                     <button type="submit" class="btn edit-button">Submit</button>

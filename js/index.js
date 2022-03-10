@@ -1,8 +1,6 @@
 const requestUrl = "http://localhost:3000/peliculas";
 const movieSection = document.getElementById('movieSection');
 
-// fetch(requestUrl).then(async movies => console.log(await movies.json()));
-
 const getMovies = async () => {
     const response = await fetch(requestUrl);
     const movies = await response.json();

@@ -1,5 +1,11 @@
 const requestUrl = "http://localhost:3000/peliculas";
 
+const getMovies = async () => {
+    const response = await fetch(requestUrl);
+    const movies = await response.json();
+    return movies;
+}
+
 const handleSubmitData = async (e) => {
     e.preventDefault()
     const allMovies = await getMovies();
@@ -18,6 +24,7 @@ const handleSubmitData = async (e) => {
 
     return result;
 }
+
 const addMovie = (data) => {
     fetch(requestUrl, {
         method: "POST",
@@ -29,13 +36,6 @@ const addMovie = (data) => {
         window.location.href = "./index.html"
     })
 }
-
-const getMovies = async () => {
-    const response = await fetch(requestUrl);
-    const movies = await response.json();
-    return movies;
-}
-
 
 document.addEventListener('submit', async (e) => {
     const data = await handleSubmitData(e);
