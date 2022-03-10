@@ -39,15 +39,15 @@ La URL por defecto que te genera json-server es `http://localhost:3000/<archivo>
 
 > Inicio
 
-![Movies](https://prnt.sc/13B2EFTfv5fC)
+![Movies](http://bigbae18.github.io/readme_movies/home.png)
 
 > Página de edición
 
-![EditMovie](https://prnt.sc/g8Nkkpukbot5)
+![EditMovie](http://bigbae18.github.io/readme_movies/deletemovie.png)
 
 > Página de añadir una película
 
-![AddMovie](https://prnt.sc/3iZ22n6kaLDU)
+![AddMovie](http://bigbae18.github.io/readme_movies/addmovie.png)
 
 ## Agradecimientos
 
