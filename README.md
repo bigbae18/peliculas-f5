@@ -17,6 +17,7 @@ Después, clona el repositorio:
 Para lanzar el `json-server`, depués de hacer el `git clone`, todo en el mismo terminal, cambia de directorio a la nueva carpeta creada y abre el servidor:
 
 > cd peliculas-f5
+
 > json-server --watch ./api/peliculas.json
 
 ### Herramientas
