@@ -38,12 +38,15 @@ La URL por defecto que te genera json-server es `http://localhost:3000/<archivo>
 ### Fotos
 
 > Inicio
+
 ![Movies](https://prnt.sc/13B2EFTfv5fC)
 
 > Página de edición
+
 ![EditMovie](https://prnt.sc/g8Nkkpukbot5)
 
 > Página de añadir una película
+
 ![AddMovie](https://prnt.sc/3iZ22n6kaLDU)
 
 ## Agradecimientos
