@@ -17,8 +17,14 @@ header {
     height: 10vh;
     z-index: 1;
 }
+p{
+    margin:0;
+}
 a {
     text-decoration: none;
+}
+.bold {
+    font-weight: bold;
 }
 .link {
     cursor: pointer;

@@ -43,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="card-body" style="background-image:url(${img})">
                     </div>
-                    <div class="card-footer text-muted">
-                        <h5 class="card-subtitle mt-4 mb-2 roboto-mono">${clasification}</h5>
-                        <h6 class="card-subtitle mb-4 roboto-slab">${director}</h6>
+                    <div class="card-footer">
+                        <h5 class="card-subtitle mt-4 mb-2 roboto-mono">Genre: <span class="bold">${clasification}</span></h5>
+                        <h6 class="card-subtitle mb-4 roboto-slab">Director: <span class="bold">${director}</span></h6>
                     </div>
                     <div class="d-flex py-2 justify-content-end gap-2">
                         <button id="edit" onclick="editMovie(${id})" type="button" class="btn edit-button">Edit</button>

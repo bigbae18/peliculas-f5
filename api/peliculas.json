@@ -69,6 +69,13 @@
       "genre": "Drama",
       "id": 11,
       "imgUrl": "https://m.media-amazon.com/images/I/71ah9DKC3oL._SL1265_.jpg"
+    },
+    {
+      "id": 12,
+      "title": "In Time",
+      "director": "Andrew Nicol",
+      "genre": "Sci-Fi",
+      "imgUrl": "https://pics.filmaffinity.com/In_Time-139117348-large.jpg"
     }
   ]
 }

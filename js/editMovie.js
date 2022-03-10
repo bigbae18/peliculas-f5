@@ -33,9 +33,8 @@ const handleSubmitData = async (e) => {
 }
 
 const editMovie = async (e) => {
-    const handledData = await handleSubmitData(e);
-    console.log(handledData);
     let confirmation = false;
+    const handledData = await handleSubmitData(e);
 
     await fetch(requestUrl, {
         method: "PUT",
@@ -73,33 +72,33 @@ document.addEventListener('DOMContentLoaded', () => {
             let img = movie.imgUrl;
 
             const cardTemplate = `
-                <section class="card col-12 col-md-4 col-xl-3 card-movie">
+                <section class="card col-12 col-lg-6 card-movie">
                     <div class="card-header text-center py-2">
-                        <h4 class="card-title">${title}</h4>
+                        <h4 class="card-title roboto-mono">${title}</h4>
                     </div>
                     <div class="card-body" style="background-image:url(${img})">
                     </div>
                     <div class="card-footer">
-                        <h5 class="card-subtitle mt-4 mb-2">${clasification}</h5>
-                        <h6 class="card-subtitle mb-4">${director}</h6>
+                        <h5 class="card-subtitle mt-4 mb-2 roboto-mono">Genre: <span class="bold">${clasification}</span></h5>
+                        <h6 class="card-subtitle mb-4 roboto-slab">Director: <span class="bold">${director}</span></h6>
                     </div>
                 </section>
             `
             const formTemplate = `
                 <form>
-                    <div class="mb-3">
+                    <div class="mb-3 roboto-mono">
                         <label for="title" class="form-label">Title</label>
                         <input name="title" type="text" class="form-control" id="title" value="${title}" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 roboto-mono">
                         <label for="director" class="form-label">Director</label>
                         <input name="director" type="text" class="form-control" id="director" value="${director}" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 roboto-mono">
                         <label for="genre" class="form-label">Genre</label>
                         <input name="genre" type="text" class="form-control" id="genre" value="${clasification}" required>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 roboto-mono">
                         <label for="imgUrl" class="form-label">Image Url</label>
                         <input name="imgUrl" type="url" class="form-control" value="${img}" id="imgUrl" required>
                     </div>
