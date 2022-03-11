@@ -4,7 +4,9 @@ Proyecto hecho con HTML5, CSS3 y JavaScript Vanilla hecho por Adrián Pelayo, en
 
 Página web que conecta con `json-server` y realiza un CRUD sencillo de Películas.
 
-## Primeros pasos
+## Pasos necesarios
+
+##### Advertencia: GitPages o local no funcionará sin el json-server con el archivo JSON
 
 Necesitarás tener `git`, `npm` & `json-server`:
 
