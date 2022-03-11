@@ -6,7 +6,7 @@ Página web que conecta con `json-server` y realiza un CRUD sencillo de Películ
 
 ## Pasos necesarios
 
-##### Advertencia: GitPages o local no funcionará sin el json-server con el archivo JSON
+#### Advertencia: GitPages o local no funcionará sin el json-server con el archivo JSON
 
 Necesitarás tener `git`, `npm` & `json-server`:
 
@@ -24,7 +24,7 @@ Para lanzar el `json-server`, depués de hacer el `git clone`, todo en el mismo 
 
 ### Herramientas
 
-Una vez hechos los [Primeros Pasos](#primeros-pasos), podrás visualizar los datos del GitPages con éxito.
+Una vez hechos los [pasos necesarios](#pasos-necesarios), podrás visualizar los datos del GitPages con éxito.
 
 Si tienes `Visual Studio Code` también puedes visualizar estos cambios con la Extensión `Live Server`, dando click en `Go Live` una vez instalada.
 
